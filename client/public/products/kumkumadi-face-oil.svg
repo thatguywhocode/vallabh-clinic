@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- Studio Background Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FCFBF8"/>
+      <stop offset="50%" stop-color="#FDF8F3"/>
+      <stop offset="100%" stop-color="#EAE3D5"/>
+    </radialGradient>
+    
+    <!-- Pedestal Shadow -->
+    <radialGradient id="shadowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(50, 35, 25, 0.28)"/>
+      <stop offset="60%" stop-color="rgba(50, 35, 25, 0.08)"/>
+      <stop offset="100%" stop-color="rgba(50, 35, 25, 0)"/>
+    </radialGradient>
+
+    <!-- Luxury Golden Amber Oil Gradient -->
+    <linearGradient id="luxuryOil" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4A2508"/>
+      <stop offset="20%" stop-color="#8F4B18"/>
+      <stop offset="50%" stop-color="#C9752A"/>
+      <stop offset="75%" stop-color="#8F4B18"/>
+      <stop offset="100%" stop-color="#3A1D06"/>
+    </linearGradient>
+
+    <!-- Metallic Gold Cap -->
+    <linearGradient id="roseGoldCap" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#734B22"/>
+      <stop offset="25%" stop-color="#C28F50"/>
+      <stop offset="50%" stop-color="#F3D197"/>
+      <stop offset="75%" stop-color="#B88445"/>
+      <stop offset="100%" stop-color="#5E3813"/>
+    </linearGradient>
+
+    <!-- Saffron Bulb -->
+    <linearGradient id="bulbGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#382E25"/>
+      <stop offset="50%" stop-color="#69594A"/>
+      <stop offset="100%" stop-color="#261E17"/>
+    </linearGradient>
+
+    <linearGradient id="glassReflection" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.45)"/>
+      <stop offset="25%" stop-color="rgba(255,255,255,0.08)"/>
+      <stop offset="75%" stop-color="rgba(255,255,255,0)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.25)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#bgGrad)"/>
+  
+  <!-- Pedestal Shadow -->
+  <ellipse cx="400" cy="670" rx="220" ry="34" fill="url(#shadowGrad)"/>
+  <ellipse cx="400" cy="662" rx="140" ry="18" fill="rgba(45, 28, 16, 0.22)"/>
+
+  <!-- DROPPER ASSEMBLY -->
+  <!-- White/Beige Silicone Bulb -->
+  <path d="M370 120 C370 85 385 70 400 70 C415 70 430 85 430 120 Z" fill="#F4EDE2" stroke="#D3C7B5" stroke-width="1.5"/>
+  <ellipse cx="400" cy="120" rx="30" ry="8" fill="#DDD1BF"/>
+
+  <!-- Metallic Gold Dropper Collar -->
+  <rect x="362" y="126" width="76" height="54" rx="5" fill="url(#roseGoldCap)"/>
+  <line x1="364" y1="140" x2="436" y2="140" stroke="rgba(255,255,255,0.5)" stroke-width="2"/>
+  <line x1="364" y1="166" x2="436" y2="166" stroke="rgba(0,0,0,0.3)" stroke-width="2"/>
+
+  <!-- Bottle Neck -->
+  <rect x="360" y="180" width="80" height="35" rx="5" fill="url(#luxuryOil)"/>
+
+  <!-- BOTTLE BODY (Tall, Elegant Cylindrical Dropper) -->
+  <path d="M350 215 C320 225 295 255 295 295 L295 625 C295 645 315 655 335 655 L465 655 C485 655 505 645 505 625 L505 295 C505 255 480 225 450 215 Z" fill="url(#luxuryOil)"/>
+  <path d="M350 215 C320 225 295 255 295 295 L295 625 C295 645 315 655 335 655 L465 655 C485 655 505 645 505 625 L505 295 C505 255 480 225 450 215 Z" fill="url(#glassReflection)"/>
+
+  <!-- Inner Liquid Level / Nectar Glow -->
+  <rect x="303" y="270" width="194" height="375" rx="16" fill="rgba(245, 166, 35, 0.12)"/>
+
+  <!-- MINIMALIST LUXURY LABEL -->
+  <rect x="312" y="320" width="176" height="295" rx="6" fill="#FFFDF9" stroke="#E6DCCF" stroke-width="1.5"/>
+  <rect x="318" y="326" width="164" height="283" rx="4" fill="none" stroke="#E83F35" stroke-width="1" stroke-dasharray="4 2"/>
+
+  <!-- Brand Banner: Botanical Green with Pure White Text -->
+  <rect x="325" y="342" width="150" height="28" rx="4" fill="#49614D"/>
+  <text x="400" y="361" font-family="'Cormorant Garamond', Georgia, serif" font-size="12" font-weight="700" letter-spacing="3" fill="#FFFFFF" text-anchor="middle">VALLABH CLINIC</text>
+
+  <!-- Saffron Flower Emblem in Vermilion Red -->
+  <circle cx="400" cy="402" r="18" fill="#FFF1F0" stroke="#E83F35" stroke-width="1.5"/>
+  <path d="M400 390 C395 396 394 402 400 412 C406 402 405 396 400 390 Z" fill="#E83F35"/>
+  <circle cx="395" cy="400" r="2.5" fill="#C9752A"/>
+  <circle cx="405" cy="400" r="2.5" fill="#C9752A"/>
+
+  <!-- Product Title -->
+  <text x="400" y="442" font-family="'Cormorant Garamond', Georgia, serif" font-size="17" font-weight="700" fill="#1C251E" text-anchor="middle">KUMKUMADI</text>
+  <text x="400" y="460" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" font-weight="700" letter-spacing="2" fill="#E83F35" text-anchor="middle">RADIANCE FACE OIL</text>
+
+  <line x1="335" y1="476" x2="465" y2="476" stroke="#E6DCCF" stroke-width="1"/>
+  <text x="400" y="494" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" fill="#66594C" text-anchor="middle">Pure Kashmiri Saffron &#8226; Sandalwood</text>
+  <text x="400" y="508" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" fill="#66594C" text-anchor="middle">16 Therapeutic Phyto-Nectars</text>
+
+  <!-- Luxury Badge -->
+  <rect x="345" y="530" width="110" height="22" rx="11" fill="#FAF6EE" stroke="#C9752A" stroke-width="1"/>
+  <text x="400" y="545" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#4A2508" text-anchor="middle">30ml LUXURY DROPPER</text>
+
+  <text x="400" y="582" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" letter-spacing="1" fill="#8C7A68" text-anchor="middle">DERMAL CARE &#8226; 100% PURE</text>
+
+  <!-- Highlight Reflections -->
+  <rect x="303" y="300" width="10" height="320" rx="5" fill="rgba(255,255,255,0.25)"/>
+  <rect x="318" y="310" width="4" height="290" rx="2" fill="rgba(255,255,255,0.12)"/>
+</svg>

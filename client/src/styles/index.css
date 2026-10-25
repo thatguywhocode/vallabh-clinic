@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-botanical: #49614D;
+  --accent-vermilion: #E83F35;
+  --bg-warm-canvas: #F7F5EF;
+  --text-primary: #28362B;
+  --text-muted: #5D4F3F;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    background-color: var(--bg-warm-canvas);
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    letter-spacing: -0.015em;
+  }
+
+  body {
+    background-color: #F7F5EF;
+    color: #28362B;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  /* Subtle botanical pattern overlay */
+  .botanical-grain {
+    background-image: radial-gradient(rgba(73, 97, 77, 0.04) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  /* Glassmorphism tuned for warm botanical aesthetic */
+  .glass-warm {
+    background: rgba(247, 245, 239, 0.88);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(73, 97, 77, 0.12);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(229, 234, 230, 0.8);
+  }
+}

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- Studio Background Gradient -->
+    <radialGradient id="bgGrad2" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FCFBF8"/>
+      <stop offset="50%" stop-color="#F7F5EF"/>
+      <stop offset="100%" stop-color="#E9E5D9"/>
+    </radialGradient>
+    
+    <!-- Pedestal Shadow -->
+    <radialGradient id="shadowGrad2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(40, 54, 43, 0.28)"/>
+      <stop offset="60%" stop-color="rgba(40, 54, 43, 0.08)"/>
+      <stop offset="100%" stop-color="rgba(40, 54, 43, 0)"/>
+    </radialGradient>
+
+    <!-- Botanical Bottle Gradient -->
+    <linearGradient id="botanicalBottle" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#28362B"/>
+      <stop offset="20%" stop-color="#3D5240"/>
+      <stop offset="50%" stop-color="#55735B"/>
+      <stop offset="80%" stop-color="#324335"/>
+      <stop offset="100%" stop-color="#1C251E"/>
+    </linearGradient>
+
+    <!-- Gold Foil Cap Gradient -->
+    <linearGradient id="goldCap" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#735A2A"/>
+      <stop offset="25%" stop-color="#B89748"/>
+      <stop offset="50%" stop-color="#F3DC8E"/>
+      <stop offset="75%" stop-color="#B89748"/>
+      <stop offset="100%" stop-color="#5E471E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#bgGrad2)"/>
+  <ellipse cx="400" cy="670" rx="270" ry="38" fill="url(#shadowGrad2)"/>
+  <ellipse cx="400" cy="660" rx="180" ry="22" fill="rgba(28, 37, 30, 0.24)"/>
+
+  <!-- BOTTLE BODY -->
+  <!-- Rounded Shoulders &amp; Body -->
+  <path d="M300 240 L500 240 Q530 240 540 280 L540 620 Q540 650 500 650 L300 650 Q260 650 260 620 L260 280 Q270 240 300 240 Z" fill="url(#botanicalBottle)"/>
+
+  <!-- GOLD APOTHECARY CAP -->
+  <rect x="310" y="140" width="180" height="100" rx="14" fill="url(#goldCap)"/>
+  <!-- Cap Vertical Ribs -->
+  <line x1="330" y1="145" x2="330" y2="235" stroke="rgba(255,255,255,0.4)" stroke-width="2.5"/>
+  <line x1="365" y1="145" x2="365" y2="235" stroke="rgba(255,255,255,0.4)" stroke-width="2.5"/>
+  <line x1="400" y1="145" x2="400" y2="235" stroke="rgba(255,255,255,0.6)" stroke-width="3"/>
+  <line x1="435" y1="145" x2="435" y2="235" stroke="rgba(255,255,255,0.4)" stroke-width="2.5"/>
+  <line x1="470" y1="145" x2="470" y2="235" stroke="rgba(255,255,255,0.4)" stroke-width="2.5"/>
+
+  <!-- WHITE APOTHECARY LABEL -->
+  <rect x="275" y="300" width="250" height="320" rx="8" fill="#FFFFFF" stroke="#CBD5CD" stroke-width="1.5"/>
+  <rect x="283" y="308" width="234" height="304" rx="5" fill="none" stroke="#49614D" stroke-width="1"/>
+
+  <!-- Brand Banner -->
+  <rect x="295" y="322" width="210" height="34" rx="4" fill="#49614D"/>
+  <text x="400" y="345" font-family="'Cormorant Garamond', Georgia, serif" font-size="15" font-weight="700" letter-spacing="4" fill="#FFFFFF" text-anchor="middle">VALLABH CLINIC</text>
+
+  <!-- Vermilion Emblem -->
+  <circle cx="400" cy="392" r="22" fill="#FEF2F1" stroke="#E83F35" stroke-width="1.5"/>
+  <path d="M400 378 C392 380 388 386 388 393 C388 402 396 407 400 409 C404 407 412 402 412 393 C412 386 408 380 400 378 Z" fill="#E83F35" fill-opacity="0.25" stroke="#E83F35" stroke-width="1.5"/>
+  <line x1="400" y1="382" x2="400" y2="405" stroke="#E83F35" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="400" y="438" font-family="'Cormorant Garamond', Georgia, serif" font-size="20" font-weight="700" fill="#1C251E" text-anchor="middle">ASHWAGANDHA</text>
+  <text x="400" y="458" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" font-weight="700" letter-spacing="1.5" fill="#E83F35" text-anchor="middle">&amp; BRAHMI STRESS CALMER</text>
+
+  <line x1="320" y1="474" x2="480" y2="474" stroke="#CBD5CD" stroke-width="1"/>
+  <text x="400" y="494" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="600" fill="#3D5240" text-anchor="middle">KSM-66 Full-Spectrum Extract</text>
+  <text x="400" y="510" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" fill="#5D4F3F" text-anchor="middle">5% Withanolides &#8226; Cortisol Harmony</text>
+
+  <!-- Capsule Count Badge -->
+  <rect x="330" y="534" width="140" height="28" rx="14" fill="#F4F6F4" stroke="#49614D" stroke-width="1"/>
+  <text x="400" y="552" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#28362B" text-anchor="middle">60 VEG CAPSULES</text>
+
+  <text x="400" y="590" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" letter-spacing="1" fill="#7A6E5F" text-anchor="middle">STANDARDIZED &#8226; 100% NON-GMO</text>
+
+  <!-- Lighting specular on bottle -->
+  <rect x="268" y="270" width="10" height="360" rx="5" fill="rgba(255,255,255,0.22)"/>
+</svg>

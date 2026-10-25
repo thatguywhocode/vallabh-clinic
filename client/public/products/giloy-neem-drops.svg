@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- Studio Background Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FCFBF8"/>
+      <stop offset="50%" stop-color="#F7F5EF"/>
+      <stop offset="100%" stop-color="#E9E5D9"/>
+    </radialGradient>
+    
+    <!-- Pedestal Shadow -->
+    <radialGradient id="shadowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(35, 48, 38, 0.28)"/>
+      <stop offset="60%" stop-color="rgba(35, 48, 38, 0.08)"/>
+      <stop offset="100%" stop-color="rgba(35, 48, 38, 0)"/>
+    </radialGradient>
+
+    <!-- Deep Emerald / Herbal Forest Tint Dropper Bottle -->
+    <linearGradient id="emeraldBottle" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1B281E"/>
+      <stop offset="20%" stop-color="#2D4632"/>
+      <stop offset="50%" stop-color="#446A4C"/>
+      <stop offset="80%" stop-color="#283E2D"/>
+      <stop offset="100%" stop-color="#141E16"/>
+    </linearGradient>
+
+    <!-- Rubber Bulb -->
+    <linearGradient id="rubberBulb" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#171C18"/>
+      <stop offset="40%" stop-color="#2E3730"/>
+      <stop offset="60%" stop-color="#424F45"/>
+      <stop offset="100%" stop-color="#111612"/>
+    </linearGradient>
+
+    <!-- Gold Dropper Ring -->
+    <linearGradient id="goldCollar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5E4716"/>
+      <stop offset="30%" stop-color="#B0893A"/>
+      <stop offset="50%" stop-color="#DEC070"/>
+      <stop offset="70%" stop-color="#A17B30"/>
+      <stop offset="100%" stop-color="#47350F"/>
+    </linearGradient>
+
+    <linearGradient id="glassReflection" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.4)"/>
+      <stop offset="25%" stop-color="rgba(255,255,255,0.08)"/>
+      <stop offset="75%" stop-color="rgba(255,255,255,0)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.25)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#bgGrad)"/>
+  
+  <!-- Pedestal Shadow -->
+  <ellipse cx="400" cy="670" rx="230" ry="36" fill="url(#shadowGrad)"/>
+  <ellipse cx="400" cy="662" rx="150" ry="20" fill="rgba(20, 30, 22, 0.22)"/>
+
+  <!-- DROPPER ASSEMBLY -->
+  <!-- Rubber Squeeze Bulb -->
+  <path d="M365 125 C365 90 380 70 400 70 C420 70 435 90 435 125 Z" fill="url(#rubberBulb)"/>
+  <ellipse cx="400" cy="125" rx="35" ry="10" fill="#242B25"/>
+
+  <!-- Gold Dropper Collar -->
+  <rect x="360" y="132" width="80" height="52" rx="6" fill="url(#goldCollar)"/>
+  <line x1="362" y1="146" x2="438" y2="146" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+  <line x1="362" y1="170" x2="438" y2="170" stroke="rgba(0,0,0,0.3)" stroke-width="2"/>
+
+  <!-- Glass Pipette Tip -->
+  <rect x="382" y="184" width="36" height="34" rx="4" fill="rgba(255,255,255,0.4)" stroke="rgba(255,255,255,0.6)" stroke-width="1"/>
+
+  <!-- BOTTLE BODY -->
+  <!-- Neck -->
+  <rect x="355" y="215" width="90" height="40" rx="6" fill="url(#emeraldBottle)"/>
+  <rect x="345" y="240" width="110" height="18" rx="6" fill="url(#emeraldBottle)"/>
+
+  <!-- Shoulder &amp; Cylinder -->
+  <path d="M345 255 C310 265 285 300 285 340 L285 625 C285 648 305 658 330 658 L470 658 C495 658 515 648 515 625 L515 340 C515 300 490 265 455 255 Z" fill="url(#emeraldBottle)"/>
+  <path d="M345 255 C310 265 285 300 285 340 L285 625 C285 648 305 658 330 658 L470 658 C495 658 515 648 515 625 L515 340 C515 300 490 265 455 255 Z" fill="url(#glassReflection)"/>
+
+  <!-- APOTHECARY LABEL -->
+  <rect x="305" y="340" width="190" height="280" rx="8" fill="#FAF8F3" stroke="#DCD6C7" stroke-width="1.5"/>
+  <rect x="312" y="348" width="176" height="264" rx="5" fill="none" stroke="#49614D" stroke-width="1.2" stroke-dasharray="6 3"/>
+
+  <!-- Brand Banner: Botanical Green with Pure White Text -->
+  <rect x="320" y="362" width="160" height="28" rx="4" fill="#49614D"/>
+  <text x="400" y="381" font-family="'Cormorant Garamond', Georgia, serif" font-size="13" font-weight="700" letter-spacing="3" fill="#FFFFFF" text-anchor="middle">VALLABH CLINIC</text>
+
+  <!-- Botanical Emblem: Neem Leaf &amp; Heart-leaved Moonseed (Giloy) -->
+  <circle cx="400" cy="420" r="19" fill="#F4F6F4" stroke="#49614D" stroke-width="1.5"/>
+  <path d="M394 415 C394 408 400 404 400 404 C400 404 406 408 406 415 C406 422 400 428 400 428 C400 428 394 422 394 415 Z" fill="#49614D" fill-opacity="0.3" stroke="#49614D" stroke-width="1.5"/>
+  <circle cx="400" cy="416" r="3.5" fill="#E83F35"/>
+
+  <!-- Product Title -->
+  <text x="400" y="462" font-family="'Cormorant Garamond', Georgia, serif" font-size="17" font-weight="700" fill="#1C251E" text-anchor="middle">GILOY &amp; NEEM</text>
+  <text x="400" y="480" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" letter-spacing="1.2" fill="#49614D" text-anchor="middle">PURIFYING PHYTO-DROPS</text>
+
+  <line x1="335" y1="494" x2="465" y2="494" stroke="#CBD5CD" stroke-width="1"/>
+  <text x="400" y="510" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" fill="#5D4F3F" text-anchor="middle">Concentrated Guduchi Stem</text>
+  <text x="400" y="524" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" fill="#5D4F3F" text-anchor="middle">&amp; Azadirachta Seasonal Cleanser</text>
+
+  <!-- Volume Badge -->
+  <rect x="345" y="544" width="110" height="22" rx="11" fill="#F4F6F4" stroke="#49614D" stroke-width="1"/>
+  <text x="400" y="559" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" font-weight="700" fill="#28362B" text-anchor="middle">60ml DROPPER</text>
+
+  <text x="400" y="590" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" letter-spacing="0.8" fill="#7A6E5F" text-anchor="middle">DETOX &amp; METABOLIC CLEARANCE</text>
+
+  <!-- Specular highlights -->
+  <rect x="294" y="340" width="10" height="290" rx="5" fill="rgba(255,255,255,0.22)"/>
+  <rect x="309" y="350" width="4" height="270" rx="2" fill="rgba(255,255,255,0.12)"/>
+</svg>

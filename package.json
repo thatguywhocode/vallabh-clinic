@@ -1,0 +1,28 @@
+{
+  "name": "vallabh-clinic",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vallabh Clinic - Premium Botanical Healthcare Web Application",
+  "scripts": {
+    "build": "npm run build --prefix client",
+    "start": "node server/src/server.js",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\" --names \"SERVER,CLIENT\" --prefix-colors \"green,cyan\"",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "install:all": "npm install --prefix server && npm install --prefix client",
+    "build:client": "npm run build --prefix client",
+    "preview:client": "npm run preview --prefix client",
+    "start:server": "npm start --prefix server"
+  },
+  "keywords": [
+    "vallabh-clinic",
+    "mern",
+    "healthcare",
+    "botanical",
+    "react",
+    "express"
+  ],
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

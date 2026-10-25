@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- Studio Background Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FCFBF8"/>
+      <stop offset="50%" stop-color="#F7F5EF"/>
+      <stop offset="100%" stop-color="#E9E5D9"/>
+    </radialGradient>
+    
+    <!-- Pedestal Shadow -->
+    <radialGradient id="shadowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(35, 48, 38, 0.28)"/>
+      <stop offset="60%" stop-color="rgba(35, 48, 38, 0.08)"/>
+      <stop offset="100%" stop-color="rgba(35, 48, 38, 0)"/>
+    </radialGradient>
+
+    <!-- Deep Amber Apothecary Glass -->
+    <linearGradient id="amberElixir" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3A200B"/>
+      <stop offset="20%" stop-color="#704018"/>
+      <stop offset="50%" stop-color="#A6682D"/>
+      <stop offset="80%" stop-color="#6B3A13"/>
+      <stop offset="100%" stop-color="#2B1505"/>
+    </linearGradient>
+
+    <!-- Botanical Green Cap -->
+    <linearGradient id="greenCap" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#243327"/>
+      <stop offset="30%" stop-color="#49614D"/>
+      <stop offset="50%" stop-color="#648569"/>
+      <stop offset="70%" stop-color="#49614D"/>
+      <stop offset="100%" stop-color="#1B261D"/>
+    </linearGradient>
+
+    <linearGradient id="glassReflection" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.4)"/>
+      <stop offset="25%" stop-color="rgba(255,255,255,0.08)"/>
+      <stop offset="75%" stop-color="rgba(255,255,255,0)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.25)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#bgGrad)"/>
+  
+  <!-- Pedestal Shadow -->
+  <ellipse cx="400" cy="670" rx="240" ry="36" fill="url(#shadowGrad)"/>
+  <ellipse cx="400" cy="662" rx="160" ry="20" fill="rgba(25, 35, 27, 0.22)"/>
+
+  <!-- CAP &amp; MEASURING RING -->
+  <rect x="350" y="140" width="100" height="75" rx="10" fill="url(#greenCap)"/>
+  <line x1="352" y1="165" x2="448" y2="165" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <line x1="352" y1="190" x2="448" y2="190" stroke="rgba(0,0,0,0.3)" stroke-width="2"/>
+  <!-- Cap knurling -->
+  <line x1="375" y1="144" x2="375" y2="210" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+  <line x1="400" y1="144" x2="400" y2="210" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <line x1="425" y1="144" x2="425" y2="210" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+
+  <!-- BOTTLE BODY -->
+  <!-- Neck -->
+  <rect x="345" y="215" width="110" height="35" rx="5" fill="url(#amberElixir)"/>
+  <!-- Bottle Shoulder &amp; Main Cylinder -->
+  <path d="M345 250 C305 260 275 295 275 340 L275 625 C275 648 295 658 325 658 L475 658 C505 658 525 648 525 625 L525 340 C525 295 495 260 455 250 Z" fill="url(#amberElixir)"/>
+  <path d="M345 250 C305 260 275 295 275 340 L275 625 C275 648 295 658 325 658 L475 658 C505 658 525 648 525 625 L525 340 C525 295 495 260 455 250 Z" fill="url(#glassReflection)"/>
+
+  <!-- APOTHECARY LABEL -->
+  <rect x="295" y="335" width="210" height="280" rx="8" fill="#FAF8F3" stroke="#DCD6C7" stroke-width="1.5"/>
+  <rect x="303" y="343" width="194" height="264" rx="5" fill="none" stroke="#49614D" stroke-width="1.2" stroke-dasharray="6 3"/>
+
+  <!-- Brand Banner: Botanical Green with Pure White Text -->
+  <rect x="312" y="358" width="176" height="30" rx="4" fill="#49614D"/>
+  <text x="400" y="378" font-family="'Cormorant Garamond', Georgia, serif" font-size="14" font-weight="700" letter-spacing="3.5" fill="#FFFFFF" text-anchor="middle">VALLABH CLINIC</text>
+
+  <!-- Brain/Focus Phyto Emblem -->
+  <circle cx="400" cy="418" r="20" fill="#F4F6F4" stroke="#49614D" stroke-width="1.5"/>
+  <path d="M394 410 C390 414 390 422 394 426 C397 428 403 428 406 426 C410 422 410 414 406 410 C403 408 397 408 394 410 Z" fill="#49614D" fill-opacity="0.3" stroke="#49614D" stroke-width="1.5"/>
+  <circle cx="400" cy="418" r="3" fill="#E83F35"/>
+
+  <!-- Product Title -->
+  <text x="400" y="460" font-family="'Cormorant Garamond', Georgia, serif" font-size="17" font-weight="700" fill="#1C251E" text-anchor="middle">BRAHMI &amp; SHANKHPUSHPI</text>
+  <text x="400" y="478" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" letter-spacing="1.5" fill="#49614D" text-anchor="middle">COGNITIVE FOCUS ELIXIR</text>
+
+  <line x1="325" y1="492" x2="475" y2="492" stroke="#CBD5CD" stroke-width="1"/>
+  <text x="400" y="510" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" fill="#5D4F3F" text-anchor="middle">Standardized Bacopa Extract</text>
+  <text x="400" y="524" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" fill="#5D4F3F" text-anchor="middle">&amp; Convolvulus Nootropic Tonic</text>
+
+  <!-- Volume Badge -->
+  <rect x="340" y="542" width="120" height="24" rx="12" fill="#F4F6F4" stroke="#49614D" stroke-width="1"/>
+  <text x="400" y="558" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" font-weight="700" fill="#28362B" text-anchor="middle">100ml BOTTLE</text>
+
+  <text x="400" y="588" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" letter-spacing="0.8" fill="#7A6E5F" text-anchor="middle">HERBAL MEDHYA TONIC &#8226; OTC</text>
+
+  <!-- Specular highlights -->
+  <rect x="284" y="335" width="12" height="300" rx="6" fill="rgba(255,255,255,0.22)"/>
+  <rect x="300" y="345" width="4" height="280" rx="2" fill="rgba(255,255,255,0.12)"/>
+</svg>

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- Studio Background Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FCFBF8"/>
+      <stop offset="50%" stop-color="#F7F5EF"/>
+      <stop offset="100%" stop-color="#E8E4D8"/>
+    </radialGradient>
+    
+    <!-- Pedestal Shadow -->
+    <radialGradient id="shadowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(35, 48, 38, 0.28)"/>
+      <stop offset="60%" stop-color="rgba(35, 48, 38, 0.08)"/>
+      <stop offset="100%" stop-color="rgba(35, 48, 38, 0)"/>
+    </radialGradient>
+
+    <!-- Tin Canister Body (Matte Deep Sage Green) -->
+    <linearGradient id="tinCanister" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2D3B30"/>
+      <stop offset="25%" stop-color="#49614D"/>
+      <stop offset="55%" stop-color="#5E7C63"/>
+      <stop offset="85%" stop-color="#3C4F3F"/>
+      <stop offset="100%" stop-color="#222C24"/>
+    </linearGradient>
+
+    <!-- Gold Tin Lid -->
+    <linearGradient id="goldLid" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5A4315"/>
+      <stop offset="20%" stop-color="#A88235"/>
+      <stop offset="50%" stop-color="#DEBE6C"/>
+      <stop offset="75%" stop-color="#A88235"/>
+      <stop offset="100%" stop-color="#45330D"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#bgGrad)"/>
+  
+  <!-- Pedestal Shadow -->
+  <ellipse cx="400" cy="670" rx="270" ry="40" fill="url(#shadowGrad)"/>
+  <ellipse cx="400" cy="660" rx="190" ry="22" fill="rgba(25, 35, 27, 0.2)"/>
+
+  <!-- TEA CANISTER BODY (Cylindrical Matte Green Tin) -->
+  <rect x="250" y="240" width="300" height="400" rx="28" fill="url(#tinCanister)"/>
+
+  <!-- GOLD EMBOSSED TIN LID -->
+  <rect x="238" y="160" width="324" height="88" rx="20" fill="url(#goldLid)"/>
+  <!-- Lid bevel line -->
+  <line x1="242" y1="230" x2="558" y2="230" stroke="rgba(0,0,0,0.3)" stroke-width="2"/>
+  <line x1="242" y1="172" x2="558" y2="172" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+
+  <!-- ARTISAN PARCHMENT LABEL WRAP -->
+  <rect x="270" y="275" width="260" height="330" rx="10" fill="#FAF8F3" stroke="#DCD6C7" stroke-width="1.5"/>
+  <rect x="278" y="283" width="244" height="314" rx="6" fill="none" stroke="#49614D" stroke-width="1.2" stroke-dasharray="6 3"/>
+
+  <!-- Brand Banner: Botanical Green with Pure White Text -->
+  <rect x="290" y="302" width="220" height="32" rx="4" fill="#49614D"/>
+  <text x="400" y="324" font-family="'Cormorant Garamond', Georgia, serif" font-size="15" font-weight="700" letter-spacing="4" fill="#FFFFFF" text-anchor="middle">VALLABH CLINIC</text>
+
+  <!-- Chamomile Blossom &amp; Moon Icon -->
+  <circle cx="400" cy="372" r="22" fill="#FEFDF9" stroke="#E5B94B" stroke-width="1.5"/>
+  <!-- Chamomile center -->
+  <circle cx="400" cy="372" r="7" fill="#E5B94B"/>
+  <!-- Petals -->
+  <circle cx="400" cy="358" r="4.5" fill="#FAF8F3" stroke="#CBD5CD" stroke-width="0.8"/>
+  <circle cx="400" cy="386" r="4.5" fill="#FAF8F3" stroke="#CBD5CD" stroke-width="0.8"/>
+  <circle cx="386" cy="372" r="4.5" fill="#FAF8F3" stroke="#CBD5CD" stroke-width="0.8"/>
+  <circle cx="414" cy="372" r="4.5" fill="#FAF8F3" stroke="#CBD5CD" stroke-width="0.8"/>
+  <circle cx="390" cy="362" r="4" fill="#FAF8F3" stroke="#CBD5CD" stroke-width="0.8"/>
+  <circle cx="410" cy="362" r="4" fill="#FAF8F3" stroke="#CBD5CD" stroke-width="0.8"/>
+  <circle cx="390" cy="382" r="4" fill="#FAF8F3" stroke="#CBD5CD" stroke-width="0.8"/>
+  <circle cx="410" cy="382" r="4" fill="#FAF8F3" stroke="#CBD5CD" stroke-width="0.8"/>
+
+  <!-- Product Title -->
+  <text x="400" y="424" font-family="'Cormorant Garamond', Georgia, serif" font-size="19" font-weight="700" fill="#1C251E" text-anchor="middle">CHAMOMILE &amp; SHANKHPUSHPI</text>
+  <text x="400" y="444" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" letter-spacing="1.8" fill="#49614D" text-anchor="middle">RESTFUL NIGHT TEA</text>
+
+  <line x1="320" y1="462" x2="480" y2="462" stroke="#CBD5CD" stroke-width="1"/>
+  <text x="400" y="482" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#5D4F3F" text-anchor="middle">Whole Egyptian Chamomile Blossoms</text>
+  <text x="400" y="498" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#5D4F3F" text-anchor="middle">Lavender Petals &#8226; Green Cardamom</text>
+
+  <!-- Quantity Badge -->
+  <rect x="325" y="522" width="150" height="26" rx="13" fill="#F4F6F4" stroke="#49614D" stroke-width="1"/>
+  <text x="400" y="539" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" font-weight="700" fill="#28362B" text-anchor="middle">20 PYRAMID BAGS</text>
+
+  <text x="400" y="575" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" letter-spacing="1" fill="#7A6E5F" text-anchor="middle">CAFFEINE FREE &#8226; 100% BOTANICAL</text>
+
+  <!-- Specular highlights -->
+  <rect x="258" y="246" width="12" height="388" rx="6" fill="rgba(255,255,255,0.18)"/>
+  <rect x="276" y="250" width="5" height="370" rx="2.5" fill="rgba(255,255,255,0.08)"/>
+</svg>

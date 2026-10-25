@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- Studio Background Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FCFBF8"/>
+      <stop offset="50%" stop-color="#F7F5EF"/>
+      <stop offset="100%" stop-color="#EAE5D9"/>
+    </radialGradient>
+    
+    <!-- Pedestal Shadow -->
+    <radialGradient id="shadowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(35, 45, 38, 0.28)"/>
+      <stop offset="60%" stop-color="rgba(35, 45, 38, 0.08)"/>
+      <stop offset="100%" stop-color="rgba(35, 45, 38, 0)"/>
+    </radialGradient>
+
+    <!-- Brass / Brushed Metal Tin Gradient -->
+    <linearGradient id="brassMetal" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4F3B16"/>
+      <stop offset="20%" stop-color="#9C772F"/>
+      <stop offset="50%" stop-color="#D9B76A"/>
+      <stop offset="75%" stop-color="#9C772F"/>
+      <stop offset="100%" stop-color="#3D2E11"/>
+    </linearGradient>
+
+    <!-- Dark Amber Tin Base Gradient -->
+    <linearGradient id="tinBaseGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#212822"/>
+      <stop offset="25%" stop-color="#3B4D3F"/>
+      <stop offset="50%" stop-color="#556E5A"/>
+      <stop offset="75%" stop-color="#3B4D3F"/>
+      <stop offset="100%" stop-color="#1A201B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#bgGrad)"/>
+  
+  <!-- Pedestal Shadow -->
+  <ellipse cx="400" cy="650" rx="290" ry="44" fill="url(#shadowGrad)"/>
+  <ellipse cx="400" cy="640" rx="210" ry="26" fill="rgba(25, 35, 27, 0.22)"/>
+
+  <!-- BALM TIN LOWER BASE -->
+  <rect x="230" y="380" width="340" height="230" rx="30" fill="url(#tinBaseGrad)"/>
+  <line x1="235" y1="580" x2="565" y2="580" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+
+  <!-- SCREW-ON BRASS TIN TOP LID -->
+  <rect x="215" y="220" width="370" height="180" rx="28" fill="url(#brassMetal)"/>
+
+  <!-- Lid Edge Knurling / Ridges -->
+  <rect x="215" y="340" width="370" height="50" rx="10" fill="url(#brassMetal)"/>
+  <line x1="240" y1="344" x2="240" y2="386" stroke="rgba(0,0,0,0.3)" stroke-width="2"/>
+  <line x1="270" y1="344" x2="270" y2="386" stroke="rgba(0,0,0,0.3)" stroke-width="2"/>
+  <line x1="300" y1="344" x2="300" y2="386" stroke="rgba(0,0,0,0.3)" stroke-width="2"/>
+  <line x1="330" y1="344" x2="330" y2="386" stroke="rgba(0,0,0,0.3)" stroke-width="2"/>
+  <line x1="360" y1="344" x2="360" y2="386" stroke="rgba(0,0,0,0.3)" stroke-width="2"/>
+  <line x1="400" y1="344" x2="400" y2="386" stroke="rgba(255,255,255,0.4)" stroke-width="3"/>
+  <line x1="440" y1="344" x2="440" y2="386" stroke="rgba(0,0,0,0.3)" stroke-width="2"/>
+  <line x1="470" y1="344" x2="470" y2="386" stroke="rgba(0,0,0,0.3)" stroke-width="2"/>
+  <line x1="500" y1="344" x2="500" y2="386" stroke="rgba(0,0,0,0.3)" stroke-width="2"/>
+  <line x1="530" y1="344" x2="530" y2="386" stroke="rgba(0,0,0,0.3)" stroke-width="2"/>
+  <line x1="560" y1="344" x2="560" y2="386" stroke="rgba(0,0,0,0.3)" stroke-width="2"/>
+
+  <!-- LID APOTHECARY ROUND EMBLEM LABEL -->
+  <rect x="250" y="240" width="300" height="92" rx="10" fill="#FAF8F3" stroke="#DCD6C7" stroke-width="1.5"/>
+
+  <!-- Brand Banner: Botanical Green with Pure White Text -->
+  <rect x="270" y="248" width="260" height="26" rx="4" fill="#49614D"/>
+  <text x="400" y="266" font-family="'Cormorant Garamond', Georgia, serif" font-size="13" font-weight="700" letter-spacing="3" fill="#FFFFFF" text-anchor="middle">VALLABH CLINIC</text>
+
+  <!-- Product Title on Lid -->
+  <text x="400" y="296" font-family="'Cormorant Garamond', Georgia, serif" font-size="16" font-weight="700" fill="#1C251E" text-anchor="middle">SHALLAKI &amp; MAHANARAYAN</text>
+  <text x="400" y="314" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" letter-spacing="1.5" fill="#E83F35" text-anchor="middle">TARGETED JOINT RELIEF BALM</text>
+
+  <!-- BASE APOTHECARY LABEL (Lower Half) -->
+  <rect x="250" y="420" width="300" height="170" rx="8" fill="#FAF8F3" stroke="#DCD6C7" stroke-width="1.5"/>
+  <rect x="258" y="428" width="284" height="154" rx="5" fill="none" stroke="#49614D" stroke-width="1" stroke-dasharray="6 3"/>
+
+  <!-- Therapeutic Details -->
+  <text x="400" y="458" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="700" fill="#28362B" text-anchor="middle">Active Boswellia &#8226; Wintergreen Oil</text>
+  <text x="400" y="476" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#5D4F3F" text-anchor="middle">Classical Camphorated Phyto-Balm</text>
+  <line x1="300" y1="490" x2="500" y2="490" stroke="#CBD5CD" stroke-width="1"/>
+  <text x="400" y="508" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" fill="#5D4F3F" text-anchor="middle">Targeted Penetration for Joints &amp; Muscles</text>
+
+  <!-- Weight Badge -->
+  <rect x="330" y="524" width="140" height="24" rx="12" fill="#F4F6F4" stroke="#49614D" stroke-width="1"/>
+  <text x="400" y="540" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" font-weight="700" fill="#28362B" text-anchor="middle">NET WT. 50g BALM TIN</text>
+
+  <text x="400" y="570" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" letter-spacing="1" fill="#7A6E5F" text-anchor="middle">TOPICAL USE ONLY &#8226; NON-PRESCRIPTION</text>
+
+  <!-- Light highlights -->
+  <rect x="238" y="225" width="14" height="170" rx="7" fill="rgba(255,255,255,0.2)"/>
+  <rect x="245" y="420" width="10" height="170" rx="5" fill="rgba(255,255,255,0.15)"/>
+</svg>

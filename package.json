@@ -4,7 +4,7 @@
   "private": true,
   "description": "Vallabh Clinic - Premium Botanical Healthcare Web Application",
   "scripts": {
-    "build": "npm run build --prefix client",
+    "build": "npm run install:all && npm run build:client",
     "start": "node server/src/server.js",
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\" --names \"SERVER,CLIENT\" --prefix-colors \"green,cyan\"",
     "dev:server": "npm run dev --prefix server",

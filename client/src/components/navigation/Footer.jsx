@@ -57,7 +57,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-14 border-b border-botanical-800/80">
           {/* Brand & Mission */}
           <div className="space-y-4">
-            <Logo onGreen={true} />
+            <Logo
+              onGreen={true}
+              onClick={(e) => {
+                e.preventDefault();
+                playIntro();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              className="cursor-pointer"
+            />
             <p className="text-xs text-warm-300 leading-relaxed font-sans pt-1">
               <span className="font-semibold text-white">VALLABH CLINIC</span> is an integrative healthcare e-commerce and doctor-patient management platform. Delivering clinical-grade herbal essentials, everyday wellness, and verified doctor recommendations.
             </p>

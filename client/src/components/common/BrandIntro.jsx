@@ -206,12 +206,6 @@ export default function BrandIntro() {
       return;
     }
 
-    // Accessibility: Reduced Motion Check
-    if (typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      closeIntro();
-      return;
-    }
-
     const params = typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : null;
     const forcedScene = params ? params.get('scene') : null;
     const initialOffset = params && params.get('t') ? parseFloat(params.get('t')) : 0;

@@ -59,6 +59,10 @@ export default function Navbar() {
 
   const handleLogoClick = (e) => {
     e.preventDefault();
+    setMobileMenuOpen(false);
+    if (location.pathname !== '/') {
+      navigate('/');
+    }
     playIntro();
   };
 

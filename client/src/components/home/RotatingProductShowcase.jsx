@@ -59,71 +59,74 @@ const FEATURED_ITEMS = [
 
 export default function RotatingProductShowcase() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [isPaused, setIsPaused] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+  const isHoveredRef = useRef(false);
   const timerRef = useRef(null);
 
-  // Check reduced motion preference
-  const prefersReducedMotion =
-    typeof window !== 'undefined' &&
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // Sync ref with hover state
+  useEffect(() => {
+    isHoveredRef.current = isHovered;
+  }, [isHovered]);
 
-  // Single source of truth for timer scheduling (transitions every 3.5 seconds)
-  const resetTimer = useCallback(() => {
+  // Reliable auto-rotation timer: switches product every 3.5 seconds
+  const startTimer = useCallback(() => {
     if (timerRef.current) {
       clearInterval(timerRef.current);
-      timerRef.current = null;
     }
-    if (!isPaused && !prefersReducedMotion) {
-      timerRef.current = setInterval(() => {
+    timerRef.current = setInterval(() => {
+      // Rotate as long as user is not hovering and page is visible
+      if (!isHoveredRef.current && !document.hidden) {
         setActiveIndex((prev) => (prev + 1) % FEATURED_ITEMS.length);
-      }, 3500);
-    }
-  }, [isPaused, prefersReducedMotion]);
+      }
+    }, 3500);
+  }, []);
 
-  // Start rotation on mount and whenever pause status changes
+  // Mount timer on initial render
   useEffect(() => {
-    resetTimer();
+    startTimer();
     return () => {
       if (timerRef.current) {
         clearInterval(timerRef.current);
         timerRef.current = null;
       }
     };
-  }, [resetTimer]);
+  }, [startTimer]);
 
-  // Pause when browser tab is inactive and resume when focused
+  // Pause when browser tab is inactive, restart clean when active
   useEffect(() => {
     const handleVisibility = () => {
-      if (document.hidden) {
-        setIsPaused(true);
-      } else {
-        setIsPaused(false);
+      if (!document.hidden) {
+        startTimer();
       }
     };
     document.addEventListener('visibilitychange', handleVisibility);
     return () => document.removeEventListener('visibilitychange', handleVisibility);
-  }, []);
+  }, [startTimer]);
 
   const handlePrev = (e) => {
     e?.stopPropagation();
     setActiveIndex((prev) => (prev - 1 + FEATURED_ITEMS.length) % FEATURED_ITEMS.length);
-    resetTimer();
+    startTimer();
   };
 
   const handleNext = (e) => {
     e?.stopPropagation();
     setActiveIndex((prev) => (prev + 1) % FEATURED_ITEMS.length);
-    resetTimer();
+    startTimer();
   };
 
   const activeProduct = FEATURED_ITEMS[activeIndex];
 
   return (
     <div
-      onMouseEnter={() => setIsPaused(true)}
-      onMouseLeave={() => setIsPaused(false)}
-      onFocus={() => setIsPaused(true)}
-      onBlur={() => setIsPaused(false)}
+      onMouseEnter={() => {
+        setIsHovered(true);
+        isHoveredRef.current = true;
+      }}
+      onMouseLeave={() => {
+        setIsHovered(false);
+        isHoveredRef.current = false;
+      }}
       className="relative w-full max-w-lg mx-auto flex flex-col items-center justify-center select-none"
     >
       {/* Studio Pedestal Backdrop with Perspective */}
@@ -194,7 +197,7 @@ export default function RotatingProductShowcase() {
                 onClick={() => {
                   if (!isCenter) {
                     setActiveIndex(idx);
-                    resetTimer();
+                    startTimer();
                   }
                 }}
                 animate={{
@@ -225,7 +228,7 @@ export default function RotatingProductShowcase() {
                     if (!isCenter) {
                       e.preventDefault();
                       setActiveIndex(idx);
-                      resetTimer();
+                      startTimer();
                     }
                   }}
                   className="block w-full focus:outline-none"
@@ -310,7 +313,7 @@ export default function RotatingProductShowcase() {
             type="button"
             onClick={() => {
               setActiveIndex(idx);
-              resetTimer();
+              startTimer();
             }}
             aria-label={`Go to slide ${idx + 1}: ${item.name}`}
             className={`transition-all rounded-full cursor-pointer ${

@@ -2,9 +2,9 @@
   <defs>
     <!-- Studio Background Gradient -->
     <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
-      <stop offset="0%" stop-color="#FCFBF8"/>
-      <stop offset="50%" stop-color="#F7F5EF"/>
-      <stop offset="100%" stop-color="#E9E5D9"/>
+      <stop offset="0%" stop-color="#FCFBF8" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#F7F5EF" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#E9E5D9" stop-opacity="0"/>
     </radialGradient>
     
     <!-- Pedestal Shadow -->

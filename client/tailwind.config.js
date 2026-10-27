@@ -59,7 +59,7 @@ export default {
       },
       fontFamily: {
         serif: ['"Cormorant Garamond"', 'Playfair Display', 'Georgia', 'serif'],
-        sans: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif'],
+        sans: ['Manrope', '"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
         'soft-sm': '0 2px 8px -2px rgba(73, 97, 77, 0.08)',

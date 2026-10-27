@@ -20,7 +20,7 @@ export default function ScrollToTop() {
       const targetId = hash.replace('#', '');
       const element = document.getElementById(targetId);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        element.scrollIntoView({ behavior: 'instant' });
         return;
       }
     }

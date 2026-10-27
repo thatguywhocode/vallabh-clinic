@@ -10,10 +10,19 @@
   --text-muted: #5D4F3F;
 }
 
+/* Shared Brand Colors & Tokens */
+.bg-brand-botanical {
+  background-color: #49614D !important;
+}
+
+.border-brand-botanical {
+  border-color: #3D5240 !important;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
-    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-family: 'Manrope', 'Plus Jakarta Sans', system-ui, sans-serif;
     background-color: var(--bg-warm-canvas);
   }
 
